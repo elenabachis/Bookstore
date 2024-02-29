@@ -1,0 +1,12 @@
+version: '3'
+services:
+  examen-practic:
+    container_name: 'examen-practic'
+    image: public.ecr.aws/t7u3l2e4/test-map-practic
+    ports:
+      - '8997:8997'
+    volumes:
+      - volum_practic:/home/coder/examen
+
+volumes:
+  volum_practic:
